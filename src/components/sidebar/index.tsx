@@ -1,5 +1,8 @@
 import { List, ListItem, VStack } from '@chakra-ui/react'
 
+import { navItems } from './nav-data'
+import { NavItem } from './nav-item'
+
 export const Sidebar = () => {
   return (
     <VStack
@@ -12,7 +15,11 @@ export const Sidebar = () => {
       flexShrink={0}
     >
       <List width="full" overflowY="auto">
-
+        {navItems.map((item, index) => (
+          <ListItem key={item.label}>
+            <NavItem item={item} isActive={index === 0} />
+          </ListItem>
+        ))}
       </List>
 
     </VStack>
