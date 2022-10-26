@@ -56,7 +56,12 @@ export const TopPicks = (props: ComponentProps<typeof VStack>) => {
         icon={<FaShoppingCart />}
         aria-label="Buy Song"
         rounded="full"
+        bg="black"
         {...brandRing}
+        _hover={{
+          background: 'gray.dark',
+          cursor: 'pointer',
+        }}
       />
     ),
   }], [])
