@@ -14,7 +14,6 @@ export const SongInfo = () => {
         label="Add to favorites"
         icon={<FaHeart />}
         color="brand.red"
-        bg="black"
       />
     </HStack>
   )
