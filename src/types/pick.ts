@@ -3,4 +3,5 @@ export type Pick = {
   name: string
   producer: string
   category: string
+  time: string
 }
